@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "5d2a0172-2cf1-44b8-a452-205d874d2bb5",
+		"name": "Todo Nest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "GetAllTodosByDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/todo/1645986159624",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"1645986159624"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateTodo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"Novi Todo 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/todo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"todo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteTodo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/todo/621bc21fe7e06e1a426dd8bb",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"621bc21fe7e06e1a426dd8bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quote",
+			"item": [
+				{
+					"name": "GetQuote",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quote",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quote"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
